@@ -91,11 +91,11 @@ En esta seccion se muestran las capturas solicitadas por el taller, vista del in
 
 ### Vista de escritorio del Index
 
-![Página principal en escritorio](capturas/index_escritorio.png)
+![Página principal en escritorio](capturas/Index_escritorio.png)
 
 ### Vista móvil a 360 px del Index
 
-![Página principal en móvil](capturas/index_movil.png)
+![Página principal en móvil](capturas/Index_movil.png)
 
 ### Vista de escritorio de Precios
 
@@ -103,7 +103,7 @@ En esta seccion se muestran las capturas solicitadas por el taller, vista del in
 
 ### Vista móvil a 360 px de Precios
 
-![Página de precios en móvil](capturas/precios_movil.png)
+![Página de precios en móvil](capturas/Precios_movil.png)
 
 ### Inspector de especificidad
 
