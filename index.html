@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce Kletus's Barber, sus servicios de barbería, horarios y opiniones de clientes.">
+    <title>Kletus's Barber | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="encabezado" id="inicio">
+        <p class="encabezado__marca">Kletus's <span>Barber</span></p>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <ul class="navegacion__lista">
+                <li><a class="navegacion__enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion__enlace" href="#servicios">Servicios</a></li>
+                <li><a class="navegacion__enlace" href="#horarios">Horarios</a></li>
+                <li><a class="navegacion__enlace" href="precios.html">Precios y citas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presentacion" aria-labelledby="titulo-principal">
+            <img class="presentacion__imagen" src="imagenes/Barbero_trabajando.png" alt="Barbero_trabajando">
+            <h1 id="titulo-principal">Tu estilo, nuestra pasión</h1>
+            <p>En <strong>Kletus's Barber</strong> cuidamos cada detalle para que salgas con un estilo que te represente.</p>
+            <p>Atención cercana, herramientas limpias y un ambiente pensado para que te sientas cómodo.</p>
+            <a class="boton" href="precios.html#formulario-cita">Solicitar una cita</a>
+        </section>
+
+        <section class="seccion" id="servicios" aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Nuestros servicios</h2>
+            <p>Estos son algunos de los servicios que ofrecemos:</p>
+            <div class="servicio servicio--destacado">
+                <img class="servicio__imagen" src="imagenes/Corte_clasico.png" alt="Ejemplo de corte clásico para hombre">
+                <h3>Corte clásico</h3>
+                <p class="servicio__texto">Un corte limpio y tradicional, ideal para el día a día.</p>
+            </div>
+            <div class="servicio">
+                <img class="servicio__imagen" src="imagenes/Arreglo_barba.png" alt="Arreglo de barba con navaja">
+                <h3>Arreglo de barba</h3>
+                <p class="servicio__texto">Perfilamos la barba y cuidamos los detalles para un acabado ordenado.</p>
+            </div>
+            <div class="servicio">
+                <img class="servicio__imagen" src="imagenes/Herramientas_barbero.png" alt="Herramientas de trabajo de un barbero">
+                <h3>Asesoría de estilo</h3>
+                <p class="servicio__texto">Te ayudamos a elegir un estilo que combine con tu cabello y tus preferencias.</p>
+            </div>
+        </section>
+
+        <section class="seccion seccion--suave" id="horarios" aria-labelledby="titulo-horarios">
+            <h2 id="titulo-horarios">Información útil</h2>
+            <h3>Horario de atención</h3>
+            <ul class="lista-informacion">
+                <li>Lunes a viernes: 9:00 a. m. – 7:00 p. m.</li>
+                <li>Sábados: 9:00 a. m. – 5:00 p. m.</li>
+                <li>Domingos y festivos: con cita previa.</li>
+            </ul>
+            <h3>Antes de venir</h3>
+            <ol class="lista-informacion">
+                <li>Consulta los precios en nuestra página.</li>
+                <li>Cuéntanos qué servicio necesitas.</li>
+                <li>Llega unos minutos antes de tu cita.</li>
+            </ol>
+            <p>Trabajamos con herramientas limpias y productos adecuados para cada servicio.</p>
+        </section>
+
+        <section class="seccion" id="opiniones" aria-labelledby="titulo-opiniones">
+            <h2 id="titulo-opiniones">Opiniones de clientes</h2>
+            <article class="opinion">
+                <blockquote>“Me atendieron a la hora acordada y el corte quedó como lo pedí.”</blockquote>
+                <p><cite>— Andrés, cliente</cite></p>
+            </article>
+            <article class="opinion">
+                <blockquote>“Buen ambiente y muy buena atención. Volveré para el arreglo de barba.”</blockquote>
+                <p><cite>— Camilo, cliente</cite></p>
+            </article>
+        </section>
+
+        <section class="seccion seccion--suave" id="ubicacion" aria-labelledby="titulo-ubicacion">
+            <h2 id="titulo-ubicacion">¿Cómo llegar?</h2>
+            <p>Estamos preparando nuestro punto de atención. Escríbenos para confirmar la dirección antes de visitarnos.</p>
+            <img class="imagen-local" src="imagenes/barberia.png" alt="Interior de una barbería con sillas y espejos">
+            <p>También puedes conocer <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Google Maps</a> para planear tu recorrido.</p>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>Kletus's Barber</strong> · Tu estilo, nuestra pasión.</p>
+        <p>Los horarios y precios de este sitio son informativos y pueden confirmarse al solicitar la cita.</p>
+        <p><a href="#inicio">Volver al inicio</a> | <a href="precios.html">Consultar precios</a></p>
+    </footer>
+</body>
+</html>

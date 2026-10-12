@@ -1,0 +1,390 @@
+/* Estilos básicos de Kletus's Barber. Las clases siguen una nomenclatura BEM sencilla. */
+:root {
+    --color-fondo: #f7f5f0;
+    --color-texto: #252525;
+    --color-oscuro: #171717;
+    --color-acento: #c9a45c;
+    --color-blanco: #ffffff;
+    --espacio: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #795b1d;
+}
+
+a:hover {
+    color: #3d2b08;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+.encabezado {
+    padding: 18px var(--espacio);
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.encabezado__marca {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.encabezado__marca span {
+    color: var(--color-acento);
+}
+
+.navegacion__lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion__lista li {
+    display: inline-block;
+    margin: 4px 7px;
+}
+
+.navegacion__enlace {
+    display: inline-block;
+    padding: 5px 8px;
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.navegacion__enlace:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+.navegacion__enlace:focus-visible {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+.presentacion {
+    padding: 28px var(--espacio);
+    text-align: center;
+    background-color: #e9e2d5;
+    border-bottom: 3px solid var(--color-acento);
+    animation: aparecer 0.7s ease-out;
+}
+
+.presentacion--corta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.presentacion__imagen {
+    width: 100%;
+    max-width: 620px;
+    max-height: 300px;
+    object-fit: cover;
+    border: 4px solid var(--color-blanco);
+    border-radius: 5px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h1 {
+    margin: 18px 0 10px;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+h2::after {
+    display: block;
+    width: 55px;
+    margin-top: 8px;
+    border-bottom: 3px solid var(--color-acento);
+    content: "";
+}
+
+h3 {
+    font-size: 19px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #493a20;
+    color: var(--color-blanco);
+}
+
+.seccion {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 28px var(--espacio);
+}
+
+.seccion--suave {
+    max-width: none;
+    background-color: #eee9df;
+}
+
+.seccion--suave > h2,
+.seccion--suave > p,
+.seccion--suave > h3,
+.seccion--suave > ul,
+.seccion--suave > ol,
+.seccion--suave > form {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.servicio {
+    margin: 18px 0;
+    padding: 16px;
+    border: 1px solid #d4cec3;
+    border-radius: 5px;
+    background-color: var(--color-blanco);
+}
+
+.servicio:nth-child(odd) {
+    background-color: #f0ece4;
+}
+
+.servicio__imagen {
+    width: 100%;
+    max-width: 420px;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.servicio p {
+    color: #5b554c;
+}
+
+/* Este selector tiene más especificidad que .servicio p. */
+.servicio--destacado .servicio__texto {
+    color: #795b1d;
+    font-weight: bold;
+}
+
+.lista-informacion li {
+    margin-bottom: 7px;
+}
+
+.opinion {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-left: 4px solid var(--color-acento);
+    background-color: var(--color-blanco);
+}
+
+.opinion blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.opinion cite {
+    font-size: 14px;
+}
+
+.imagen-local {
+    width: 100%;
+    max-width: 620px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.precio-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-blanco);
+}
+
+.precio-tabla caption {
+    padding: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.precio-tabla th,
+.precio-tabla td {
+    padding: 10px 8px;
+    border: 1px solid #cfc7b9;
+    text-align: left;
+}
+
+.precio-tabla th {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+}
+
+.precio-tabla tbody tr:nth-child(even) {
+    background-color: #f0ece4;
+}
+
+/* Empate de especificidad con .precio-tabla td: esta regla aparece después. */
+.precio-tabla .precio-especial {
+    color: #795b1d;
+    font-weight: bold;
+}
+
+.nota-precio {
+    font-size: 14px;
+}
+
+.formulario {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 18px;
+    border: 1px solid #d4cec3;
+    border-radius: 5px;
+    background-color: var(--color-blanco);
+}
+
+.formulario__grupo {
+    margin-bottom: 14px;
+}
+
+.formulario__grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input[required],
+.formulario select[required] {
+    border-left: 3px solid var(--color-acento);
+}
+
+.formulario input {
+    border-color: #aaa294;
+}
+
+.formulario__campo {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa294;
+    border-radius: 3px;
+    background-color: #fff;
+    color: var(--color-texto);
+    font: inherit;
+}
+
+/* La clase y la pseudoclase superan en especificidad a .formulario input. */
+.formulario__campo:focus {
+    border-color: #795b1d;
+    background-color: #fffaf0;
+}
+
+.mensaje-confirmacion {
+    max-width: 620px;
+    margin: 16px auto 0;
+    font-size: 14px;
+}
+
+#formulario-cita:target {
+    outline: 2px solid var(--color-acento);
+    outline-offset: -2px;
+}
+
+.pie-pagina {
+    padding: 22px var(--espacio);
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.pie-pagina p {
+    margin: 6px 0;
+}
+
+.pie-pagina a {
+    color: #f0d69e;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado__marca {
+        font-size: 24px;
+    }
+
+    .navegacion__lista li {
+        display: block;
+        margin: 2px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .precio-tabla th,
+    .precio-tabla td {
+        padding: 7px 5px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .formulario {
+        padding: 12px;
+    }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

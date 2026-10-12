@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta los precios de Kletus's Barber y solicita una cita mediante el formulario.">
+    <title>Kletus's Barber | Precios y citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="encabezado" id="inicio">
+        <p class="encabezado__marca">Kletus's <span>Barber</span></p>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <ul class="navegacion__lista">
+                <li><a class="navegacion__enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion__enlace" href="index.html#servicios">Servicios</a></li>
+                <li><a class="navegacion__enlace" href="index.html#horarios">Horarios</a></li>
+                <li><a class="navegacion__enlace" href="precios.html">Precios y citas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presentacion presentacion--corta" aria-labelledby="titulo-principal">
+            <img class="presentacion__imagen" src="imagenes/Herramientas_barbero.png" alt="Herramientas utilizadas para los servicios de barbería">
+            <h1 id="titulo-principal">Precios y citas</h1>
+            <p>Elige el servicio que necesitas y envíanos tu solicitud.</p>
+        </section>
+
+        <section class="seccion" id="precios" aria-labelledby="titulo-precios">
+            <h2 id="titulo-precios">Lista de precios</h2>
+            <p>Tarifas de ejemplo en pesos colombianos. Confirma el valor al reservar.</p>
+            <table class="precio-tabla">
+                <caption>Servicios de Kletus's Barber</caption>
+                <thead>
+                    <tr><th scope="col">Servicio</th><th scope="col">Duración aproximada</th><th scope="col">Precio</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Corte clásico</td><td>45 minutos</td><td>$32.000</td></tr>
+                    <tr><td>Arreglo de barba</td><td>15 minutos</td><td>$10.000</td></tr>
+                    <tr><td>Corte + barba</td><td>60 minutos</td><td>$40.000</td></tr>
+                    <tr><td>Asesoría de estilo</td><td>10 minutos</td><td>$5.000</td></tr>
+                    <tr class="fila-promocion"><td colspan="2">Promoción de lunes a miércoles</td><td class="precio-especial"><s>$25.000</s> $20.000</td></tr>
+                </tbody>
+            </table>
+            <p class="nota-precio"><abbr title="Pesos colombianos">COP</abbr>. La promoción aplica al corte clásico y no es acumulable con otras ofertas.</p>
+        </section>
+
+        <section class="seccion seccion--suave" id="formulario-cita" aria-labelledby="titulo-formulario">
+            <h2 id="titulo-formulario">Solicita tu cita</h2>
+            <p>Completa los datos y nos pondremos en contacto para confirmar disponibilidad.</p>
+            <form class="formulario" action="#confirmacion" method="get">
+                <div class="formulario__grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input class="formulario__campo" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="formulario__grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input class="formulario__campo" type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="formulario__grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input class="formulario__campo" type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+                </div>
+                <div class="formulario__grupo">
+                    <label for="servicio">Servicio que deseas</label>
+                    <select class="formulario__campo" id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="corte">Corte clásico</option>
+                        <option value="barba">Arreglo de barba</option>
+                        <option value="combo">Corte + barba</option>
+                        <option value="asesoria">Asesoría de estilo</option>
+                    </select>
+                </div>
+                <div class="formulario__grupo">
+                    <label for="fecha">Fecha preferida</label>
+                    <input class="formulario__campo" type="date" id="fecha" name="fecha">
+                </div>
+                <div class="formulario__grupo">
+                    <label for="mensaje">Información adicional</label>
+                    <textarea class="formulario__campo" id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué horario te sirve o qué estilo buscas."></textarea>
+                </div>
+                <button class="boton" type="submit">Enviar solicitud</button>
+            </form>
+            <p id="confirmacion" class="mensaje-confirmacion">Al enviar, se abrirá una dirección con los datos del formulario. Este sitio de práctica no envía correos automáticamente.</p>
+        </section>
+
+        <section class="seccion" aria-labelledby="titulo-recomendaciones">
+            <h2 id="titulo-recomendaciones">Una recomendación</h2>
+            <p>Si no sabes qué corte elegir, puedes revisar los servicios de la <a href="index.html#servicios">página principal</a> y comentarnos tus preferencias.</p>
+            <p>Un buen corte comienza con una conversación clara sobre el resultado que buscas.</p>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>Kletus's Barber</strong> · Tu estilo, nuestra pasión.</p>
+        <p>Precios de ejemplo sujetos a confirmación.</p>
+        <p><a href="#inicio">Volver al inicio</a> | <a href="index.html">Ir a la página principal</a></p>
+    </footer>
+</body>
+</html>
