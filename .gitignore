@@ -1,0 +1,17 @@
+
+# Configuracion personal de Visual Studio Code
+.vscode/
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
+
+# Archivos temporales de editores
+*.tmp
+*.bak
+
+.vscode/
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
